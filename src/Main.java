@@ -96,10 +96,10 @@ public class Main {
         int numberOfPlaces = 102;
         int numberOfSeats = 60;
         int numberOfStandingPlaces = numberOfPlaces - numberOfSeats;
-        int numberOfSeatsOccupied = 40;
+        int numberOfSeatsOccupied = 60;
         int numberOfStandingPlacesOccupied = 40;
         int totalOccupiedPlaces = numberOfStandingPlacesOccupied + numberOfSeatsOccupied;
-        boolean totalFreePlaces = totalOccupiedPlaces != numberOfPlaces;
+        boolean totalFreePlaces = totalOccupiedPlaces < numberOfPlaces;
 
         if (!totalFreePlaces) {
             System.out.println("Вагон полностью забит");
