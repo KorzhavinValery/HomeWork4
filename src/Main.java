@@ -93,12 +93,6 @@ public class Main {
 
     public static void task6() {
         System.out.println("Задача 6");
-        /*Вместимость одного вагона поезда — 102 человека. Вагон рассчитан на 60 сидячих мест, все остальные — стоячие.
-
-С помощью условного оператора и конструкции else if напишите программу,
-которая выводит в консоль сообщение о том, есть ли место в вагоне, сидячее или стоячее, или вагон уже полностью забит.
-
-         */
         int numberOfPlaces = 102;
         int numberOfSeats = 60;
         int numberOfStandingPlaces = numberOfPlaces - numberOfSeats;
@@ -126,6 +120,16 @@ public class Main {
 
     public static void task7() {
         System.out.println("Задача 7");
+        int one = 5;
+        int two = 10;
+        int three = 12;
+        if (one > two) {
+            System.out.println("Наиболее число one");
+        } else if (two > three) {
+            System.out.println("Наибольшее число two");
+        } else {
+            System.out.println("Наибольшее число three");
+        }
     }
 
 }
