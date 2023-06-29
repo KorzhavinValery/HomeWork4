@@ -93,6 +93,35 @@ public class Main {
 
     public static void task6() {
         System.out.println("Задача 6");
+        /*Вместимость одного вагона поезда — 102 человека. Вагон рассчитан на 60 сидячих мест, все остальные — стоячие.
+
+С помощью условного оператора и конструкции else if напишите программу,
+которая выводит в консоль сообщение о том, есть ли место в вагоне, сидячее или стоячее, или вагон уже полностью забит.
+
+         */
+        int numberOfPlaces = 102;
+        int numberOfSeats = 60;
+        int numberOfStandingPlaces = numberOfPlaces - numberOfSeats;
+        int numberOfSeatsOccupied = 40;
+        int numberOfStandingPlacesOccupied = 40;
+        int totalOccupiedPlaces = numberOfStandingPlacesOccupied + numberOfSeatsOccupied;
+        boolean totalFreePlaces = totalOccupiedPlaces != numberOfPlaces;
+
+        if (!totalFreePlaces) {
+            System.out.println("Вагон полностью забит");
+        } else {
+            System.out.println("Всего в вагоне " + totalOccupiedPlaces + " человек");
+        }
+        if (numberOfSeatsOccupied < numberOfSeats) {
+            System.out.println("В вагоне есть сидячее место");
+        } else if (numberOfSeatsOccupied >= numberOfSeats) {
+            System.out.println("В вагоне не осталось сидячих мест");
+        }
+        if (numberOfStandingPlacesOccupied < numberOfStandingPlaces) {
+            System.out.println("В вагоне есть стоячее место");
+        } else if (numberOfStandingPlacesOccupied >= numberOfStandingPlaces) {
+            System.out.println("В вагоне нет стоячих мест");
+        }
     }
 
     public static void task7() {
